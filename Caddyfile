@@ -17,3 +17,11 @@ http://calendar-backend.mysibsau.ru {
 http://events-calendar.mysibsau.ru {
   reverse_proxy events_calendar_frontend:80
 }
+
+http://singlechat-service-backend.mysibsau.ru {
+  reverse_proxy singlechat_service_backend:80
+}
+
+http://singlechat-service.mysibsau.ru {
+  reverse_proxy singlechat_service_frontend:80
+}
